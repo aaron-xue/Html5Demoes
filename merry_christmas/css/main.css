@@ -4,15 +4,9 @@ body {
   height: 100%;
   overflow: hidden;
 }
-html #page_wrap,
-body #page_wrap {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-html #page_wrap .page_loading,
-body #page_wrap .page_loading {
-  display: none;
+html .page_loading,
+body .page_loading {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -20,8 +14,8 @@ body #page_wrap .page_loading {
   height: 100%;
   background-color: #5BDFEC;
 }
-html #page_wrap .page_loading .logo,
-body #page_wrap .page_loading .logo {
+html .page_loading .logo,
+body .page_loading .logo {
   position: absolute;
   top: 100px;
   left: 0;
@@ -32,16 +26,16 @@ body #page_wrap .page_loading .logo {
   background-image: url('../img/1447917863188.png');
   background-position: center center;
 }
-html #page_wrap .page_loading .logo #logo_o,
-body #page_wrap .page_loading .logo #logo_o {
+html .page_loading .logo #logo_o,
+body .page_loading .logo #logo_o {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-html #page_wrap .page_loading .logo #logo_i,
-body #page_wrap .page_loading .logo #logo_i {
+html .page_loading .logo #logo_i,
+body .page_loading .logo #logo_i {
   position: absolute;
   top: 0;
   left: 0;
@@ -51,8 +45,8 @@ body #page_wrap .page_loading .logo #logo_i {
   width: 159px;
   height: 74px;
 }
-html #page_wrap .page_loading #loading_bar,
-body #page_wrap .page_loading #loading_bar {
+html .page_loading #loading_bar,
+body .page_loading #loading_bar {
   position: absolute;
   top: 31px;
   left: 0;
@@ -62,41 +56,12 @@ body #page_wrap .page_loading #loading_bar {
   height: 320px;
   animation: rotate 2s linear 0s infinite both;
 }
-html #page_wrap .pagelist,
-body #page_wrap .pagelist {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-html #page_wrap .pagelist li,
-body #page_wrap .pagelist li {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-html #page_wrap .pagelist li .arrow,
-body #page_wrap .pagelist li .arrow {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 48px;
-  height: 48px;
-  z-index: 10;
-  background-image: url('../img/1448434551939.png');
-  background-position: center center;
-  animation: ani_arrow 1.5s infinite ease-in-out;
-}
-html #page_wrap .pagelist .page_1,
-body #page_wrap .pagelist .page_1 {
-  display: none;
+html .sec1,
+body .sec1 {
   background-color: #10C4BF;
 }
-html #page_wrap .pagelist .page_1 #ele_1,
-body #page_wrap .pagelist .page_1 #ele_1 {
+html .sec1 #ele_1,
+body .sec1 #ele_1 {
   position: absolute;
   top: 45px;
   left: 0;
@@ -105,11 +70,9 @@ body #page_wrap .pagelist .page_1 #ele_1 {
   color: #fff;
   margin: auto;
   text-align: center;
-  animation: fadeIn 1s ease 1s 1 both;
-  animation: fadeOut 1s ease 0s 1 both;
 }
-html #page_wrap .pagelist .page_1 #ele_2,
-body #page_wrap .pagelist .page_1 #ele_2 {
+html .sec1 #ele_2,
+body .sec1 #ele_2 {
   position: absolute;
   top: 75px;
   left: 0;
@@ -118,127 +81,111 @@ body #page_wrap .pagelist .page_1 #ele_2 {
   color: #fff;
   margin: auto;
   text-align: center;
-  animation: fadeIn 1s ease 1s 1 both;
-  animation: fadeOut 1s ease 0s 1 both;
 }
-html #page_wrap .pagelist .page_1 #ele_3,
-body #page_wrap .pagelist .page_1 #ele_3 {
+html .sec1 #ele_3,
+body .sec1 #ele_3 {
   position: absolute;
   left: 0;
   top: 7px;
   width: 100%;
-  animation: flash 3s ease 0s 1 both;
 }
-html #page_wrap .pagelist .page_1 #ele_4,
-body #page_wrap .pagelist .page_1 #ele_4 {
+html .sec1 #ele_4,
+body .sec1 #ele_4 {
   position: absolute;
   left: 122px;
   top: 134px;
   height: 27px;
-  animation: fadeIn 1s ease 5.2s 1 both;
 }
-html #page_wrap .pagelist .page_1 #ele_5,
-body #page_wrap .pagelist .page_1 #ele_5 {
+html .sec1 #ele_5,
+body .sec1 #ele_5 {
   position: absolute;
   left: 12px;
   top: 43px;
   height: 87px;
-  animation: fadeIn 1s ease 5.2s 1 both;
 }
-html #page_wrap .pagelist .page_1 #ele_6,
-body #page_wrap .pagelist .page_1 #ele_6 {
+html .sec1 #ele_6,
+body .sec1 #ele_6 {
   position: absolute;
   left: 0px;
   top: 127px;
   width: 100%;
-  animation: fadeIn 1s ease 1.5s 1 both;
-  animation: fadeOut 1s ease 0s 1 both;
 }
-html #page_wrap .pagelist .page_1 #ele_7,
-body #page_wrap .pagelist .page_1 #ele_7 {
+html .sec1 #ele_7,
+body .sec1 #ele_7 {
   position: absolute;
   left: 0;
   right: 0;
   top: 317px;
   margin: auto;
   width: 39px;
-  z-index: 3;
+  z-index: 5;
   transform-origin: top center;
 }
-html #page_wrap .pagelist .page_1 #ele_8,
-body #page_wrap .pagelist .page_1 #ele_8 {
+html .sec1 #ele_8,
+body .sec1 #ele_8 {
   position: absolute;
   left: 0;
   right: 0;
   top: 214px;
   margin: auto;
   height: 283px;
-  animation: bounceIn 0.8s ease 1.5s 1 both;
-  animation: bounce 1s ease 0s 1 both;
-  animation: fadeOut 0.1s ease 0s 1 both;
+  z-index: 4;
 }
-html #page_wrap .pagelist .page_1 #ele_9,
-body #page_wrap .pagelist .page_1 #ele_9 {
+html .sec1 #ele_9,
+body .sec1 #ele_9 {
   position: absolute;
   left: 0;
   right: 0;
   top: 364px;
   margin: auto;
   height: 135px;
-  animation: fadeIn 0.1s ease 4.5s 1 both;
   z-index: 4;
 }
-html #page_wrap .pagelist .page_1 #ele_10,
-body #page_wrap .pagelist .page_1 #ele_10 {
+html .sec1 #ele_10,
+body .sec1 #ele_10 {
   position: absolute;
   left: 176px;
   top: 257px;
   width: 107px;
-  animation: bounceIn 1s ease 4.8s 1 both;
 }
-html #page_wrap .pagelist .page_1 #ele_11,
-body #page_wrap .pagelist .page_1 #ele_11 {
+html .sec1 #ele_11,
+body .sec1 #ele_11 {
   position: absolute;
   left: 19px;
   top: 277px;
   width: 128px;
-  animation: bounceIn 1s ease 4.8s 1 both;
 }
-html #page_wrap .pagelist .page_1 #ele_12,
-body #page_wrap .pagelist .page_1 #ele_12 {
+html .sec1 #ele_12,
+body .sec1 #ele_12 {
   position: absolute;
   left: 0;
   right: 0;
   top: 464px;
   margin: auto;
   height: 42px;
-  animation: fadeIn 1s ease 0.7s 1 both;
   z-index: 3;
 }
-html #page_wrap .pagelist .page_1 #ele_13,
-body #page_wrap .pagelist .page_1 #ele_13 {
+html .sec1 #ele_13,
+body .sec1 #ele_13 {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  animation: fadeInDown 1s ease 0.3s 1 both;
   z-index: 2;
 }
-html #page_wrap .pagelist .page_1 #ele_14,
-body #page_wrap .pagelist .page_1 #ele_14 {
+html .sec1 #ele_14,
+body .sec1 #ele_14 {
   position: absolute;
   left: 0;
   top: 382px;
   width: 100%;
-  animation: fadeIn 1s ease 0.9s 1 both;
 }
-html #page_wrap .pagelist .page_2,
-body #page_wrap .pagelist .page_2 {
+html .sec2,
+body .sec2 {
   background-color: #07DBE0;
-  display: none;
 }
-html #page_wrap .pagelist .page_2 #ele_21,
-body #page_wrap .pagelist .page_2 #ele_21 {
+html .sec2 #ele_21,
+body .sec2 #ele_21 {
   position: absolute;
   top: 343px;
   width: 100%;
@@ -246,100 +193,91 @@ body #page_wrap .pagelist .page_2 #ele_21 {
   color: #fff;
   text-align: center;
   line-height: 26px;
-  animation: fadeIn 1s ease 1s 1 both;
 }
-html #page_wrap .pagelist .page_2 #ele_22,
-body #page_wrap .pagelist .page_2 #ele_22 {
+html .sec2 #ele_22,
+body .sec2 #ele_22 {
   position: absolute;
   top: 215px;
   left: 116px;
   width: 36px;
   transform-origin: top center;
-  animation: fadeIn 1s ease 2.5s 1 both;
   animation: swing 1s ease 0s 3 both;
   z-index: 2;
 }
-html #page_wrap .pagelist .page_2 #ele_23,
-body #page_wrap .pagelist .page_2 #ele_23 {
+html .sec2 #ele_23,
+body .sec2 #ele_23 {
   position: absolute;
   top: 145px;
   left: 260px;
   width: 36px;
   transform-origin: top center;
-  animation: fadeIn 1s ease 2.5s 1 both;
   animation: swing 1s ease 0s 3 both;
   z-index: 2;
 }
-html #page_wrap .pagelist .page_2 #ele_23 img,
-body #page_wrap .pagelist .page_2 #ele_23 img {
+html .sec2 #ele_23 img,
+body .sec2 #ele_23 img {
   width: 36px;
   transform: rotate(333.263deg) translateZ(0px);
 }
-html #page_wrap .pagelist .page_2 #ele_24,
-body #page_wrap .pagelist .page_2 #ele_24 {
+html .sec2 #ele_24,
+body .sec2 #ele_24 {
   position: absolute;
   top: 40px;
   left: 100px;
   width: 36px;
   transform-origin: top center;
-  animation: fadeIn 1s ease 2.5s 1 both;
   animation: swing 1s ease 0s 3 both;
   z-index: 2;
 }
-html #page_wrap .pagelist .page_2 #ele_24 img,
-body #page_wrap .pagelist .page_2 #ele_24 img {
+html .sec2 #ele_24 img,
+body .sec2 #ele_24 img {
   width: 36px;
   transform: rotate(27.6585deg) translateZ(0px);
 }
-html #page_wrap .pagelist .page_2 #ele_25,
-body #page_wrap .pagelist .page_2 #ele_25 {
+html .sec2 #ele_25,
+body .sec2 #ele_25 {
   position: absolute;
   top: 36px;
   left: 5px;
   z-index: 4;
   height: 304px;
-  animation: fadeIn 1s ease 3.5s 1 both;
   z-index: 3;
 }
-html #page_wrap .pagelist .page_2 #ele_26,
-body #page_wrap .pagelist .page_2 #ele_26 {
+html .sec2 #ele_26,
+body .sec2 #ele_26 {
   position: absolute;
   top: 96px;
   left: 82px;
   width: 41px;
-  animation: fadeInLeftDown 1s ease 4s 1 both;
   z-index: 2;
 }
-html #page_wrap .pagelist .page_2 #ele_27,
-body #page_wrap .pagelist .page_2 #ele_27 {
+html .sec2 #ele_27,
+body .sec2 #ele_27 {
   position: absolute;
   top: 155px;
   left: 223px;
   width: 35px;
-  animation: fadeInDown 1s ease 5.5s 1 both;
   z-index: 2;
 }
-html #page_wrap .pagelist .page_2 #ele_28,
-body #page_wrap .pagelist .page_2 #ele_28 {
+html .sec2 #ele_28,
+body .sec2 #ele_28 {
   position: absolute;
   top: 27px;
   left: 150px;
   width: 73px;
-  animation: fadeInDown 1s ease 5.5s 1 both;
   z-index: 1;
 }
-html #page_wrap .pagelist .page_2 #ele_29,
-body #page_wrap .pagelist .page_2 #ele_29 {
+html .sec2 #ele_29,
+body .sec2 #ele_29 {
   position: absolute;
   left: 0px;
   top: 20px;
   width: 320px;
   height: 232px;
   display: block;
-  animation: fadeInUp 1s ease 0.6s 1 both;
 }
-html #page_wrap .pagelist .page_2 #ele_30,
-body #page_wrap .pagelist .page_2 #ele_30 {
+html .sec2 #ele_30,
+body .sec2 #ele_30 {
   position: absolute;
   left: 0;
   right: 0;
@@ -348,24 +286,18 @@ body #page_wrap .pagelist .page_2 #ele_30 {
   width: 204px;
   height: 130px;
   z-index: 11;
-  animation: fadeInDown 1s ease 0.3s 1 both;
 }
-html #page_wrap .pagelist .page_3,
-body #page_wrap .pagelist .page_3 {
-  display: none;
-}
-html #page_wrap .pagelist .page_3 #ele_31,
-body #page_wrap .pagelist .page_3 #ele_31 {
+html .sec3 #ele_31,
+body .sec3 #ele_31 {
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
   width: 310px;
   height: 420px;
-  animation: flash 3s linear 0s infinite both;
 }
-html #page_wrap .pagelist .page_3 #ele_32,
-body #page_wrap .pagelist .page_3 #ele_32 {
+html .sec3 #ele_32,
+body .sec3 #ele_32 {
   position: absolute;
   left: 0px;
   right: 0;
@@ -374,18 +306,8 @@ body #page_wrap .pagelist .page_3 #ele_32 {
   height: 550px;
   animation: fadeInUp 1s ease 0.3s 1 both;
 }
-html #page_wrap .pagelist .page_3 #ele_33,
-body #page_wrap .pagelist .page_3 #ele_33 {
-  position: absolute;
-  left: 0px;
-  right: 0;
-  margin: auto;
-  width: 320px;
-  height: 550px;
-  animation: fadeIn 1s ease 0.3s 1 both;
-}
-html #page_wrap .pagelist .page_3 #ele_34,
-body #page_wrap .pagelist .page_3 #ele_34 {
+html .sec3 #ele_33,
+body .sec3 #ele_33 {
   position: absolute;
   left: 0px;
   right: 0;
@@ -393,8 +315,17 @@ body #page_wrap .pagelist .page_3 #ele_34 {
   width: 320px;
   height: 550px;
 }
-html #page_wrap .pagelist .page_3 #ele_35,
-body #page_wrap .pagelist .page_3 #ele_35 {
+html .sec3 #ele_34,
+body .sec3 #ele_34 {
+  position: absolute;
+  left: 0px;
+  right: 0;
+  margin: auto;
+  width: 320px;
+  height: 550px;
+}
+html .sec3 #ele_35,
+body .sec3 #ele_35 {
   position: absolute;
   left: 0;
   right: 0;
@@ -405,10 +336,9 @@ body #page_wrap .pagelist .page_3 #ele_35 {
   font-size: 15px;
   text-align: center;
   color: #fff;
-  animation: fadeIn 1s ease 1s 1 both;
 }
-html #page_wrap .pagelist .page_3 #ele_36,
-body #page_wrap .pagelist .page_3 #ele_36 {
+html .sec3 #ele_36,
+body .sec3 #ele_36 {
   position: absolute;
   left: 0px;
   right: 0;
@@ -416,38 +346,34 @@ body #page_wrap .pagelist .page_3 #ele_36 {
   top: 67px;
   width: 217px;
   height: 360px;
-  animation: pulse 3s linear 0s infinite both;
 }
-html #page_wrap .pagelist .page_3 #ele_37,
-body #page_wrap .pagelist .page_3 #ele_37 {
+html .sec3 #ele_37,
+body .sec3 #ele_37 {
   position: absolute;
   left: 0px;
   right: 0;
   margin: auto;
   top: 102px;
   width: 262px;
-  animation: fadeIn 1s ease 0.9s 1 both;
 }
-html #page_wrap .pagelist .page_3 #ele_38,
-body #page_wrap .pagelist .page_3 #ele_38 {
+html .sec3 #ele_38,
+body .sec3 #ele_38 {
   position: absolute;
   left: 79px;
   right: 0;
   top: 79px;
   width: 187.5px;
-  animation: flash 4s linear 0s infinite both;
 }
-html #page_wrap .pagelist .page_3 #ele_39,
-body #page_wrap .pagelist .page_3 #ele_39 {
+html .sec3 #ele_39,
+body .sec3 #ele_39 {
   position: absolute;
   left: 72px;
   right: 0;
   top: 135px;
   width: 205px;
-  animation: fadeIn 1s ease 2.5s 1 both;
 }
-html #page_wrap .pagelist .page_3 #ele_310,
-body #page_wrap .pagelist .page_3 #ele_310 {
+html .sec3 #ele_310,
+body .sec3 #ele_310 {
   position: absolute;
   left: 0px;
   right: 0;
@@ -455,25 +381,22 @@ body #page_wrap .pagelist .page_3 #ele_310 {
   top: 81px;
   width: 36px;
   height: 35px;
-  animation: fadeIn 1s ease 0.9s 1 both;
   animation: rotate 4s ease 0s 5 both;
 }
-html #page_wrap .pagelist .page_3 #ele_311,
-body #page_wrap .pagelist .page_3 #ele_311 {
+html .sec3 #ele_311,
+body .sec3 #ele_311 {
   position: absolute;
   left: 51px;
   right: 0;
   top: 93px;
   width: 239px;
-  animation: flash 5s linear 0s infinite both;
 }
-html #page_wrap .pagelist .page_4,
-body #page_wrap .pagelist .page_4 {
+html .sec4,
+body .sec4 {
   background-color: #15BFBF;
-  display: none;
 }
-html #page_wrap .pagelist .page_4 #ele_41,
-body #page_wrap .pagelist .page_4 #ele_41 {
+html .sec4 #ele_41,
+body .sec4 #ele_41 {
   position: absolute;
   left: 0px;
   right: 0;
@@ -483,8 +406,8 @@ body #page_wrap .pagelist .page_4 #ele_41 {
   height: 350px;
   animation: flash 4s linear 0s infinite both;
 }
-html #page_wrap .pagelist .page_4 #ele_42,
-body #page_wrap .pagelist .page_4 #ele_42 {
+html .sec4 #ele_42,
+body .sec4 #ele_42 {
   position: absolute;
   left: 0px;
   right: 0;
@@ -496,16 +419,16 @@ body #page_wrap .pagelist .page_4 #ele_42 {
   text-align: center;
   animation: fadeIn 1s ease 1s 1 both;
 }
-html #page_wrap .pagelist .page_4 #ele_43,
-body #page_wrap .pagelist .page_4 #ele_43 {
+html .sec4 #ele_43,
+body .sec4 #ele_43 {
   position: absolute;
   left: 186px;
   top: 274px;
   width: 119px;
   animation: rubberBand 1s ease 0s 1 both;
 }
-html #page_wrap .pagelist .page_4 #ele_44,
-body #page_wrap .pagelist .page_4 #ele_44 {
+html .sec4 #ele_44,
+body .sec4 #ele_44 {
   position: absolute;
   left: 0px;
   right: 0;
@@ -514,50 +437,49 @@ body #page_wrap .pagelist .page_4 #ele_44 {
   width: 100%;
   animation: fadeInDown 1s ease 0.3s 1 both;
 }
-html #page_wrap .pagelist .page_4 #ele_45,
-body #page_wrap .pagelist .page_4 #ele_45 {
+html .sec4 #ele_45,
+body .sec4 #ele_45 {
   position: absolute;
   left: 127px;
   bottom: 0;
   width: 133px;
   animation: fadeIn 1s ease 2.5s 1 both;
 }
-html #page_wrap .pagelist .page_4 #ele_46,
-body #page_wrap .pagelist .page_4 #ele_46 {
+html .sec4 #ele_46,
+body .sec4 #ele_46 {
   position: absolute;
   left: 200px;
   top: 192px;
   width: 78px;
   animation: fadeInDown 1s ease 2.3s 1 both;
 }
-html #page_wrap .pagelist .page_4 #ele_46 img,
-body #page_wrap .pagelist .page_4 #ele_46 img {
+html .sec4 #ele_46 img,
+body .sec4 #ele_46 img {
   width: 100%;
   transform: rotate(328.543deg);
 }
-html #page_wrap .pagelist .page_4 #ele_47,
-body #page_wrap .pagelist .page_4 #ele_47 {
+html .sec4 #ele_47,
+body .sec4 #ele_47 {
   position: absolute;
   left: -55px;
   top: 127px;
   width: 252px;
   animation: zoomIn 1s ease 3.5s 1 both;
 }
-html #page_wrap .pagelist .page_4 #ele_48,
-body #page_wrap .pagelist .page_4 #ele_48 {
+html .sec4 #ele_48,
+body .sec4 #ele_48 {
   position: absolute;
   left: 145px;
   top: 258px;
   width: 39px;
   animation: bounceIn 1s ease 4s 1 both;
 }
-html #page_wrap .pagelist .page_5,
-body #page_wrap .pagelist .page_5 {
-  display: none;
+html .sec5,
+body .sec5 {
   background-color: #00E4ED;
 }
-html #page_wrap .pagelist .page_5 #ele_51,
-body #page_wrap .pagelist .page_5 #ele_51 {
+html .sec5 #ele_51,
+body .sec5 #ele_51 {
   position: absolute;
   left: 0;
   right: 0;
@@ -567,22 +489,22 @@ body #page_wrap .pagelist .page_5 #ele_51 {
   height: 78px;
   animation: fadeIn 1s ease 1s 1 both;
 }
-html #page_wrap .pagelist .page_5 #ele_51 p,
-body #page_wrap .pagelist .page_5 #ele_51 p {
+html .sec5 #ele_51 p,
+body .sec5 #ele_51 p {
   text-align: center;
   font-size: 16px;
   color: #fff;
   line-height: 23px;
 }
-html #page_wrap .pagelist .page_5 #ele_52,
-body #page_wrap .pagelist .page_5 #ele_52 {
+html .sec5 #ele_52,
+body .sec5 #ele_52 {
   position: absolute;
   bottom: 0;
   width: 100%;
   animation: fadeInDown 1s ease 0.3s 1 both;
 }
-html #page_wrap .pagelist .page_5 #ele_53,
-body #page_wrap .pagelist .page_5 #ele_53 {
+html .sec5 #ele_53,
+body .sec5 #ele_53 {
   position: absolute;
   left: 0;
   right: 0;
@@ -591,8 +513,8 @@ body #page_wrap .pagelist .page_5 #ele_53 {
   width: 283px;
   animation: bounceIn 1s ease 0.8s 1 both;
 }
-html #page_wrap .pagelist .page_5 #ele_54,
-body #page_wrap .pagelist .page_5 #ele_54 {
+html .sec5 #ele_54,
+body .sec5 #ele_54 {
   position: absolute;
   left: 0;
   right: 0;
@@ -601,8 +523,8 @@ body #page_wrap .pagelist .page_5 #ele_54 {
   width: 223px;
   animation: fadeOut 0.1s ease 0s 1 both;
 }
-html #page_wrap .pagelist .page_5 #ele_55,
-body #page_wrap .pagelist .page_5 #ele_55 {
+html .sec5 #ele_55,
+body .sec5 #ele_55 {
   position: absolute;
   left: 0;
   right: 0;
@@ -611,8 +533,8 @@ body #page_wrap .pagelist .page_5 #ele_55 {
   width: 304px;
   animation: moveOutUp 1s ease 0s 1 both;
 }
-html #page_wrap .pagelist .page_5 #ele_56,
-body #page_wrap .pagelist .page_5 #ele_56 {
+html .sec5 #ele_56,
+body .sec5 #ele_56 {
   position: absolute;
   left: 0;
   right: 0;
@@ -621,8 +543,8 @@ body #page_wrap .pagelist .page_5 #ele_56 {
   width: 223px;
   animation: bounceIn 1s ease 5.7s 1 both;
 }
-html #page_wrap .pagelist .page_5 #ele_57,
-body #page_wrap .pagelist .page_5 #ele_57 {
+html .sec5 #ele_57,
+body .sec5 #ele_57 {
   position: absolute;
   left: 0;
   right: 0;
@@ -631,24 +553,24 @@ body #page_wrap .pagelist .page_5 #ele_57 {
   height: 102px;
   animation: fadeIn 1s ease 5.3s 1 both;
 }
-html #page_wrap .pagelist .page_5 #ele_58,
-body #page_wrap .pagelist .page_5 #ele_58 {
+html .sec5 #ele_58,
+body .sec5 #ele_58 {
   position: absolute;
   left: 39px;
   top: 355px;
   width: 21px;
   animation: fadeInLeft 1s ease 5.1s 1 both;
 }
-html #page_wrap .pagelist .page_5 #ele_59,
-body #page_wrap .pagelist .page_5 #ele_59 {
+html .sec5 #ele_59,
+body .sec5 #ele_59 {
   position: absolute;
   right: 39px;
   top: 355px;
   width: 32px;
   animation: fadeInRight 1s ease 5.1s 1 both;
 }
-html #page_wrap .pagelist .page_5 #ele_510,
-body #page_wrap .pagelist .page_5 #ele_510 {
+html .sec5 #ele_510,
+body .sec5 #ele_510 {
   position: absolute;
   left: 0;
   right: 0;
@@ -657,28 +579,28 @@ body #page_wrap .pagelist .page_5 #ele_510 {
   height: 115px;
   animation: pulse 1s linear 0s infinite both;
 }
-html #page_wrap .pagelist .page_6,
-body #page_wrap .pagelist .page_6 {
+html .sec6,
+body .sec6 {
   background-color: #09CED4;
 }
-html #page_wrap .pagelist .page_6 #ele_61,
-body #page_wrap .pagelist .page_6 #ele_61 {
+html .sec6 #ele_61,
+body .sec6 #ele_61 {
   position: absolute;
   left: 0px;
   bottom: 0;
   width: 100%;
   animation: fadeInDown 1s ease 0.3s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_62,
-body #page_wrap .pagelist .page_6 #ele_62 {
+html .sec6 #ele_62,
+body .sec6 #ele_62 {
   position: absolute;
   left: 0px;
   bottom: 0;
   width: 100%;
   animation: fadeIn 1s ease 0.9s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_63,
-body #page_wrap .pagelist .page_6 #ele_63 {
+html .sec6 #ele_63,
+body .sec6 #ele_63 {
   position: absolute;
   left: 0;
   right: 0;
@@ -687,8 +609,8 @@ body #page_wrap .pagelist .page_6 #ele_63 {
   width: 109px;
   animation: bounceIn 1s ease 1.3s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_64,
-body #page_wrap .pagelist .page_6 #ele_64 {
+html .sec6 #ele_64,
+body .sec6 #ele_64 {
   position: absolute;
   left: 0;
   right: 0;
@@ -697,8 +619,8 @@ body #page_wrap .pagelist .page_6 #ele_64 {
   height: 53px;
   animation: bounceIn 1s ease 1.3s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_65,
-body #page_wrap .pagelist .page_6 #ele_65 {
+html .sec6 #ele_65,
+body .sec6 #ele_65 {
   position: absolute;
   left: 0;
   right: 0;
@@ -707,8 +629,8 @@ body #page_wrap .pagelist .page_6 #ele_65 {
   width: 100%;
   animation: fadeIn 1s ease 2s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_66,
-body #page_wrap .pagelist .page_6 #ele_66 {
+html .sec6 #ele_66,
+body .sec6 #ele_66 {
   position: absolute;
   left: 0;
   right: 0;
@@ -718,15 +640,15 @@ body #page_wrap .pagelist .page_6 #ele_66 {
   height: 78px;
   animation: fadeIn 1s ease 1s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_66 p,
-body #page_wrap .pagelist .page_6 #ele_66 p {
+html .sec6 #ele_66 p,
+body .sec6 #ele_66 p {
   text-align: center;
   font-size: 16px;
   color: #fff;
   line-height: 23px;
 }
-html #page_wrap .pagelist .page_6 #ele_67,
-body #page_wrap .pagelist .page_6 #ele_67 {
+html .sec6 #ele_67,
+body .sec6 #ele_67 {
   position: absolute;
   left: 261px;
   top: 189px;
@@ -734,13 +656,13 @@ body #page_wrap .pagelist .page_6 #ele_67 {
   height: 32px;
   animation: fadeInUp 1s ease 2.1s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_67 img,
-body #page_wrap .pagelist .page_6 #ele_67 img {
+html .sec6 #ele_67 img,
+body .sec6 #ele_67 img {
   width: 100%;
   transform: rotate(83.8445deg) translateZ(0px);
 }
-html #page_wrap .pagelist .page_6 #ele_68,
-body #page_wrap .pagelist .page_6 #ele_68 {
+html .sec6 #ele_68,
+body .sec6 #ele_68 {
   position: absolute;
   left: 12px;
   top: 235px;
@@ -748,12 +670,12 @@ body #page_wrap .pagelist .page_6 #ele_68 {
   height: 44px;
   animation: fadeInUp 1s ease 2s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_68 img,
-body #page_wrap .pagelist .page_6 #ele_68 img {
+html .sec6 #ele_68 img,
+body .sec6 #ele_68 img {
   width: 100%;
 }
-html #page_wrap .pagelist .page_6 #ele_69,
-body #page_wrap .pagelist .page_6 #ele_69 {
+html .sec6 #ele_69,
+body .sec6 #ele_69 {
   position: absolute;
   right: 12px;
   top: 246px;
@@ -761,13 +683,13 @@ body #page_wrap .pagelist .page_6 #ele_69 {
   height: 18px;
   animation: fadeInUp 1s ease 2.6s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_69 img,
-body #page_wrap .pagelist .page_6 #ele_69 img {
+html .sec6 #ele_69 img,
+body .sec6 #ele_69 img {
   width: 100%;
   transform: rotate(63.7039deg) translateZ(0px);
 }
-html #page_wrap .pagelist .page_6 #ele_610,
-body #page_wrap .pagelist .page_6 #ele_610 {
+html .sec6 #ele_610,
+body .sec6 #ele_610 {
   position: absolute;
   left: 220px;
   top: 232px;
@@ -775,13 +697,13 @@ body #page_wrap .pagelist .page_6 #ele_610 {
   height: 23px;
   animation: fadeInUp 1s ease 2.6s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_610 img,
-body #page_wrap .pagelist .page_6 #ele_610 img {
+html .sec6 #ele_610 img,
+body .sec6 #ele_610 img {
   width: 100%;
   transform: rotate(63.7039deg) translateZ(0px);
 }
-html #page_wrap .pagelist .page_6 #ele_611,
-body #page_wrap .pagelist .page_6 #ele_611 {
+html .sec6 #ele_611,
+body .sec6 #ele_611 {
   position: absolute;
   left: 68px;
   top: 228px;
@@ -789,13 +711,13 @@ body #page_wrap .pagelist .page_6 #ele_611 {
   height: 23px;
   animation: fadeInUp 1s ease 2.2s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_611 img,
-body #page_wrap .pagelist .page_6 #ele_611 img {
+html .sec6 #ele_611 img,
+body .sec6 #ele_611 img {
   width: 100%;
   transform: rotate(63.7039deg) translateZ(0px);
 }
-html #page_wrap .pagelist .page_6 #ele_612,
-body #page_wrap .pagelist .page_6 #ele_612 {
+html .sec6 #ele_612,
+body .sec6 #ele_612 {
   position: absolute;
   left: 31px;
   top: 170px;
@@ -803,13 +725,13 @@ body #page_wrap .pagelist .page_6 #ele_612 {
   height: 30px;
   animation: fadeInUp 1s ease 2.3s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_612 img,
-body #page_wrap .pagelist .page_6 #ele_612 img {
+html .sec6 #ele_612 img,
+body .sec6 #ele_612 img {
   width: 100%;
   transform: rotate(135.434deg) translateZ(0px);
 }
-html #page_wrap .pagelist .page_6 #ele_613,
-body #page_wrap .pagelist .page_6 #ele_613 {
+html .sec6 #ele_613,
+body .sec6 #ele_613 {
   position: absolute;
   left: 239px;
   top: 282px;
@@ -817,8 +739,8 @@ body #page_wrap .pagelist .page_6 #ele_613 {
   height: 35px;
   animation: fadeInUp 1s ease 2.4s 1 both;
 }
-html #page_wrap .pagelist .page_6 #ele_613 img,
-body #page_wrap .pagelist .page_6 #ele_613 img {
+html .sec6 #ele_613 img,
+body .sec6 #ele_613 img {
   width: 100%;
   transform: rotate(303.665deg) translateZ(0px);
 }
@@ -1129,6 +1051,26 @@ body #page_wrap .pagelist .page_6 #ele_613 img {
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05);
+    opacity: 1;
+  }
+}
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0);
+    transform: perspective(400px) rotateX(0);
     opacity: 1;
   }
 }

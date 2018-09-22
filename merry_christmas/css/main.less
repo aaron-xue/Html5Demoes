@@ -2,12 +2,8 @@ html,body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    #page_wrap{
-        position: relative;
-        width: 100%;
-        height: 100%;
         .page_loading{
-            display: none;
+            display: block;
             position: absolute;
             top: 0;
             left: 0;
@@ -53,33 +49,7 @@ html,body{
                 animation: rotate 2s linear 0s infinite both;
             }
         }
-        .pagelist{
-            position: relative;
-            width: 100%;
-            height: 100%;
-            li{
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                .arrow{
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    margin: auto;
-                    width: 48px;
-                    height: 48px;
-                    z-index: 10;
-                    background-image: url('../img/1448434551939.png');
-                    background-position: center center;
-                    animation: ani_arrow 1.5s infinite ease-in-out;
-                }
-
-            }
-            .page_1{
-                display: none;
+            .sec1{
                 background-color: #10C4BF;
                 #ele_1{
                     position: absolute;
@@ -90,8 +60,6 @@ html,body{
                     color: #fff;
                     margin: auto;
                     text-align: center;
-                    animation: fadeIn 1s ease 1s 1 both;
-                    animation: fadeOut 1s ease 0s 1 both;
                 }
                 #ele_2{
                     position: absolute;
@@ -102,37 +70,30 @@ html,body{
                     color: #fff;
                     margin: auto;
                     text-align: center;
-                    animation: fadeIn 1s ease 1s 1 both;
-                    animation: fadeOut 1s ease 0s 1 both;
                 }
                 #ele_3{
                     position: absolute;
                     left: 0;
                     top: 7px;
                     width: 100%;
-                    animation: flash 3s ease 0s 1 both;
                 }
                 #ele_4{
                     position: absolute;
                     left: 122px;
                     top: 134px;
                     height: 27px;
-                    animation: fadeIn 1s ease 5.2s 1 both;
                 }
                 #ele_5{
                     position: absolute;
                     left: 12px;
                     top: 43px;
                     height: 87px;
-                    animation: fadeIn 1s ease 5.2s 1 both;
                 }
                 #ele_6{
                     position: absolute;
                     left: 0px;
                     top: 127px;
                     width: 100%;
-                    animation: fadeIn 1s ease 1.5s 1 both;
-                    animation: fadeOut 1s ease 0s 1 both;
                 }
                 #ele_7{
                     position: absolute;
@@ -141,12 +102,8 @@ html,body{
                     top: 317px;
                     margin: auto;
                     width: 39px;
-                    z-index: 3;
+                    z-index: 5;
                     transform-origin: top center;
-                    // animation: bounceIn 0.8s ease 1.5s 1 both;
-                    // animation: swing 0.5s ease 0s 4 both;
-                    // animation: bounce 1s ease 0s 1 both;
-                    // animation: fadeOut 0.1s ease 0s 1 both;
                 }
                 #ele_8{
                     position: absolute;
@@ -155,9 +112,7 @@ html,body{
                     top: 214px;
                     margin: auto;
                     height: 283px;
-                    animation: bounceIn 0.8s ease 1.5s 1 both;
-                    animation: bounce 1s ease 0s 1 both;
-                    animation: fadeOut 0.1s ease 0s 1 both;
+                    z-index: 4;
                 }
                 #ele_9{
                     position: absolute;
@@ -166,7 +121,6 @@ html,body{
                     top: 364px;
                     margin: auto;
                     height: 135px;
-                    animation: fadeIn 0.1s ease 4.5s 1 both;
                     z-index: 4;
                 }
                 #ele_10{
@@ -174,14 +128,12 @@ html,body{
                     left: 176px;
                     top: 257px;
                     width: 107px;
-                    animation: bounceIn 1s ease 4.8s 1 both;
                 }
                 #ele_11{
                     position: absolute;
                     left: 19px;
                     top: 277px;
                     width: 128px;
-                    animation: bounceIn 1s ease 4.8s 1 both;
                 }
                 #ele_12{
                     position: absolute;
@@ -190,7 +142,6 @@ html,body{
                     top: 464px;
                     margin: auto;
                     height: 42px;
-                    animation: fadeIn 1s ease 0.7s 1 both;
                     z-index: 3;
                 }
                 #ele_13{
@@ -198,7 +149,6 @@ html,body{
                     left: 0;
                     bottom: 0;
                     width: 100%;
-                    animation: fadeInDown 1s ease 0.3s 1 both;
                     z-index: 2;
                 }
                 #ele_14{
@@ -206,12 +156,10 @@ html,body{
                     left: 0;
                     top: 382px;
                     width: 100%;
-                    animation: fadeIn 1s ease 0.9s 1 both;
                 }
             }
-            .page_2{
+            .sec2{
                 background-color: #07DBE0;
-                display: none;
                 #ele_21{
                     position: absolute;
                     top: 343px;
@@ -220,7 +168,6 @@ html,body{
                     color: #fff;
                     text-align: center;
                     line-height: 26px;
-                    animation: fadeIn 1s ease 1s 1 both;
                 }
                 #ele_22{
                     position: absolute;
@@ -228,7 +175,6 @@ html,body{
                     left: 116px;
                     width: 36px;
                     transform-origin: top center;
-                    animation: fadeIn 1s ease 2.5s 1 both;
                     animation: swing 1s ease 0s 3 both;
                     z-index: 2;
                 }
@@ -238,7 +184,6 @@ html,body{
                     left: 260px;
                     width: 36px;
                     transform-origin: top center;
-                    animation: fadeIn 1s ease 2.5s 1 both;
                     animation: swing 1s ease 0s 3 both;
                     z-index: 2;
                     img{
@@ -252,7 +197,6 @@ html,body{
                     left: 100px;
                     width: 36px;
                     transform-origin: top center;
-                    animation: fadeIn 1s ease 2.5s 1 both;
                     animation: swing 1s ease 0s 3 both;
                     z-index: 2;
                     img{
@@ -266,7 +210,6 @@ html,body{
                     left: 5px;
                     z-index: 4;
                     height: 304px;
-                    animation: fadeIn 1s ease 3.5s 1 both;
                     z-index: 3;
                 }
                 #ele_26{
@@ -274,7 +217,6 @@ html,body{
                     top: 96px;
                     left: 82px;
                     width: 41px;
-                    animation: fadeInLeftDown 1s ease 4s 1 both;
                     z-index: 2;
                 }
                 #ele_27{
@@ -282,7 +224,6 @@ html,body{
                     top: 155px;
                     left: 223px;
                     width: 35px;
-                    animation: fadeInDown 1s ease 5.5s 1 both;
                     z-index: 2;
                 }
                 #ele_28{
@@ -290,7 +231,6 @@ html,body{
                     top: 27px;
                     left: 150px;
                     width: 73px;
-                    animation: fadeInDown 1s ease 5.5s 1 both;
                     z-index: 1;
                 }
                 #ele_29{
@@ -300,7 +240,6 @@ html,body{
                     width: 320px;
                     height: 232px;
                     display: block;
-                    animation: fadeInUp 1s ease 0.6s 1 both;
                 }
                 #ele_30{
                     position: absolute;
@@ -311,11 +250,9 @@ html,body{
                     width: 204px;
                     height: 130px;
                     z-index: 11;
-                    animation: fadeInDown 1s ease 0.3s 1 both;
                 }
             }
-            .page_3{
-                display: none;
+            .sec3{
                 #ele_31{
                     position: absolute;
                     left: 0;
@@ -323,7 +260,6 @@ html,body{
                     margin: auto;
                     width: 310px;
                     height: 420px;
-                    animation: flash 3s linear 0s infinite both;
                 }
                 #ele_32{
                     position: absolute;
@@ -332,7 +268,7 @@ html,body{
                     margin: auto;
                     width: 320px;
                     height: 550px;
-                    // animation: flash 4s linear 0s infinite both;
+                    // ;
                     animation: fadeInUp 1s ease 0.3s 1 both;
                 }
                 #ele_33{
@@ -342,7 +278,6 @@ html,body{
                     margin: auto;
                     width: 320px;
                     height: 550px;
-                    animation: fadeIn 1s ease 0.3s 1 both;
                 }
                 #ele_34{
                     position: absolute;
@@ -363,7 +298,6 @@ html,body{
                     font-size: 15px;
                     text-align: center;
                     color: #fff;
-                    animation: fadeIn 1s ease 1s 1 both;
                 }
                 #ele_36{
                     position: absolute;
@@ -373,7 +307,6 @@ html,body{
                     top: 67px;
                     width: 217px;
                     height: 360px;
-                    animation: pulse 3s linear 0s infinite both;
                 }
                 #ele_37{
                     position: absolute;
@@ -382,7 +315,6 @@ html,body{
                     margin: auto;
                     top: 102px;
                     width: 262px;
-                    animation: fadeIn 1s ease 0.9s 1 both;
                 }
                 #ele_38{
                     position: absolute;
@@ -390,7 +322,6 @@ html,body{
                     right: 0;
                     top: 79px;
                     width: 187.5px;
-                    animation: flash 4s linear 0s infinite both;
                 }
                 #ele_39{
                     position: absolute;
@@ -398,7 +329,6 @@ html,body{
                     right: 0;
                     top: 135px;
                     width: 205px;
-                    animation: fadeIn 1s ease 2.5s 1 both;
                 }
                 #ele_310{
                     position: absolute;
@@ -408,7 +338,6 @@ html,body{
                     top: 81px;
                     width: 36px;
                     height: 35px;
-                    animation: fadeIn 1s ease 0.9s 1 both;
                     animation: rotate 4s ease 0s 5 both;
                 }
                 #ele_311{
@@ -417,12 +346,10 @@ html,body{
                     right: 0;
                     top: 93px;
                     width: 239px;
-                    animation: flash 5s linear 0s infinite both;
                 }
             }
-            .page_4{
+            .sec4{
                 background-color: #15BFBF;
-                display: none;
                 #ele_41{
                     position: absolute;
                     left: 0px;
@@ -496,8 +423,7 @@ html,body{
                     animation: bounceIn 1s ease 4s 1 both;
                 }
             }
-            .page_5{
-                display: none;
+            .sec5{
                 background-color: #00E4ED;
                 #ele_51{
                     position: absolute;
@@ -595,7 +521,7 @@ html,body{
                     animation: pulse 1s linear 0s infinite both;
                 }
             }
-            .page_6{
+            .sec6{
                 background-color: #09CED4;
                 #ele_61{
                     position: absolute;
@@ -738,8 +664,6 @@ html,body{
                     }
                 }
             }
-        }
-    }
 }
 @keyframes rotate{
     0%{
@@ -1023,6 +947,26 @@ html,body{
     50% {
         -webkit-transform: scale3d(1.05,1.05,1.05);
         transform: scale3d(1.05,1.05,1.05);
+        opacity: 1;
+    }
+}
+@keyframes flipInX {
+    0% {
+        -webkit-transform: perspective(400px)rotateX(90deg);
+        transform: perspective(400px)rotateX(90deg);
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px)rotateX(-10deg);
+        transform: perspective(400px)rotateX(-10deg);
+    }
+    70% {
+        -webkit-transform: perspective(400px)rotateX(10deg);
+        transform: perspective(400px)rotateX(10deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px)rotateX(0);
+        transform: perspective(400px)rotateX(0);
         opacity: 1;
     }
 }
